@@ -17,7 +17,7 @@ const empData = [
         empId: 3,
         empName: "Sagar",
         empDept: "Account",
-        empSalary: 23532,
+        empSalary: 1900,
         empDesignation: "Sr Accountant Eng"
     },
     {
@@ -36,8 +36,26 @@ const empData = [
     },
 ]
 
-const marEmos = empData.filter((employee) => employee.empDept == "Marketing")
-console.table(marEmos)
+// const empIdx = empData.findIndex((employee) => employee.empId == 2)
+// console.table(empIdx)
 
-const marEmps = empData.filter((employee) => employee.empDept == "Marketing" && employee.empSalary < 30000)
-console.log(marEmps)
+console.log(empData.length)
+empData.push({
+    empId: 6,
+    empName: "Amol",
+    empDept: "Marketing",
+    empSalary: 33245,
+    empDesignation: "Salesman"
+})
+// console.log(empData.length)
+// console.table(empData)
+// empData.pop()
+// console.log(empData.length)
+// console.table(empData)
+
+const result = empData.every((emp) => emp.empSalary >= 20000)
+console.log(result)
+
+
+const resultw = empData.some((emp) => emp.empSalary <= 20000)
+console.log(resultw)
