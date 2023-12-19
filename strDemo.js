@@ -1,0 +1,12 @@
+const str = "I am a Boy"
+console.log(str.toUpperCase())
+console.log(str.toLowerCase())
+console.log(str.charAt(5))
+console.log(str.replace('Boy',"girl"))
+const words=str.split(" ")
+console.log(words)
+console.log(str.slice(2,6))
+console.log(str.startsWith('I'))
+console.log(str.endsWith('y'))
+console.log(str.concat(" and indian"))
+console.log(str.substring(2,8))
