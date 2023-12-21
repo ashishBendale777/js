@@ -1,10 +1,10 @@
-const nums=[43,43,77,"Ashish",66]
+const nums = [43, 43, 77, 66]
 console.log(nums[3])
 
-for (const i in nums) {
-    console.log(nums[i])
-}
+var total = 0
 
 for (const ele of nums) {
-    console.lo g(ele)
+    total += ele
 }
+
+console.log(total)

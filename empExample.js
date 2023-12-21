@@ -36,26 +36,34 @@ const empData = [
     },
 ]
 
-// const empIdx = empData.findIndex((employee) => employee.empId == 2)
-// console.table(empIdx)
+// const emp = empData.find((empl) => empl.empId == 2)
+// console.table(emp)
 
-console.log(empData.length)
-empData.push({
-    empId: 6,
-    empName: "Amol",
-    empDept: "Marketing",
-    empSalary: 33245,
-    empDesignation: "Salesman"
-})
+
+// const marEmp = empData.filter((emp) => emp.empDept == "Marketing")
+// console.table(marEmp)
+
+// const salEmp = empData.filter((empl) => empl.empSalary>=200000 && empl.empSalary<=250000)
+// console.log(salEmp)
+
 // console.log(empData.length)
-// console.table(empData)
+// empData.push({
+//     empId: 6,
+//     empName: "Amol",
+//     empDept: "Marketing",
+//     empSalary: 33245,
+//     empDesignation: "Salesman"
+// })
+// console.log(empData.length)
+// // 
+// // console.table(empData)
 // empData.pop()
 // console.log(empData.length)
-// console.table(empData)
+// // console.table(empData)
 
 const result = empData.every((emp) => emp.empSalary >= 20000)
 console.log(result)
 
 
-const resultw = empData.some((emp) => emp.empSalary <= 20000)
+const resultw = empData.some((emp) => emp.empSalary >= 20000)
 console.log(resultw)
