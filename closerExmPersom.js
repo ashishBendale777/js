@@ -15,7 +15,7 @@ function createPerson(name, city) {
 }
 
 //creating person
-const person=createPerson("Ashish","BSL")
+const person = createPerson("Ashish", "BSL")
 
 console.log(person.getAge())
 console.log(person.getPerData())
@@ -25,3 +25,6 @@ person.increseAge()
 person.increseAge()
 console.log(person.getAge())
 console.log(person.getPerData())
+
+const per2 = createPerson("Pawan","Bodwad")
+console.log(per2.getPerData())
